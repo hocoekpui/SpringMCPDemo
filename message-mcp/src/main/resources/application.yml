@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: mcp
+  profiles:
+    active: dev
+  ai:
+    mcp:
+      server:
+        name: mcp-server
+        version: 1.0.0
+        sse-endpoint: /sse
+        type: async
+  mail:
+    host: smtp.163.com
+    port: 465
+    username: 15626410968@163.com
+    password: ${EMAIL_TOKEN}
+    protocol: smtp
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+          ssl:
+            enable: true
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type:
+      update-strategy: not_empty
+  mapper-locations: classpath*:/mappers/*.xml
+
+logging:
+  level:
+    root: info

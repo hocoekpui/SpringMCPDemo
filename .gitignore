@@ -1,0 +1,47 @@
+# ==========================================
+# IntelliJ IDEA 特定文件
+# ==========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ==========================================
+# Maven 编译输出与临时文件 (如果你用 Maven)
+# ==========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# 注意：.mvn/wrapper/maven-wrapper.properties 通常需要提交，不要忽略它
+
+# ==========================================
+# Gradle 编译输出与临时文件 (如果你用 Gradle)
+# ==========================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ==========================================
+# 日志文件
+# ==========================================
+*.log
+logs/
+
+# ==========================================
+# 操作系统生成文件
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
